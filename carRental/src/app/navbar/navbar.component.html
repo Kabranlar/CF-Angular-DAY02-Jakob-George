@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <a class="navbar-brand">Navbar</a>
+
+  <ng-template [ngIf]="donationCounter > 190" [ngIfElse]="none">
+    <span class="align-middle">You are a real nice human being! VIP vibes all over man!</span>
+  </ng-template>
+
+  <button (click)="addDonation()" class="btn btn-outline-success my-2 my-sm-0" type="submit">Donate 10€</button>
+</nav>
